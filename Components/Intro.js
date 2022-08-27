@@ -4,8 +4,7 @@ export default function Intro() {
 
     return (
         <div>
-            <h2><center>REACT CLOCK</center></h2>
+            <h1><center>REACT CLOCK</center></h1>
         </div>
     )
-
 }

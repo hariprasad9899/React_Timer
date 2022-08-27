@@ -40,25 +40,25 @@ html,body, #root {
 .hands {
     position: absolute;
     width: 4px;
-    height: 86%;
     left: 50%;
-    top: 7%;
 }
 
 .hourHand {
     background: linear-gradient(#6cfcf1 50%, transparent 50%);
-    height: 60%;
-    top: 20%;
+    height: 40%;
+    top: 30%;
 }
 
 .minuteHand {
     background: linear-gradient(white 50%, transparent 50%);
-    height: 70%;
-    top: 15%;
+    height: 50%;
+    top: 25%;
 }
 
 .secondHand {
-    background: linear-gradient(red 50%, transparent 0%);
+    background: linear-gradient(red 50%, transparent 50%);
+    height: 60%;
+    top: 20%;
 }
 
 .errorMsg {
