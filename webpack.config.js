@@ -5,6 +5,10 @@ const CSSPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
 
+    resolve: {
+        extensions: ['*', '.js', '.jsx'],
+    },
+
     entry: {
         src: './src/index.js',
     },
@@ -28,7 +32,7 @@ module.exports = {
         rules: [
             
             {
-                test: /.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
@@ -41,13 +45,8 @@ module.exports = {
             {
                 test: /.css$/,
                 exclude: /node_modules/,
-                use: [ CSSPlugin.loader ,'css-loader']
-            }
-            
+                use: [ CSSPlugin.loader,'css-loader']
+            }   
         ]
-        
     }
-
-
-
 }
